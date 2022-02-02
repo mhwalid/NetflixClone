@@ -72,20 +72,19 @@
         <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o6.PNG?raw=true" alt=""></a>                
       </div>
      </section>
-   
-
-   
+  <Footer/>
 </template>
 
 
 <script>
 
-
+import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar.vue'
 export default {
   name: 'Home',
   components: {
-    Navbar
+    Navbar,
+    Footer,
   }
 }
 </script>
@@ -281,10 +280,5 @@ footer {
     text-align: center;
     font-size: 15px;
   }
-
-  
-
-  
-   
 }
 </style>
