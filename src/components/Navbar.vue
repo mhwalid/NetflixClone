@@ -1,9 +1,7 @@
 <template>
     <header>
-      <div class="netflixLogo">
-        <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></a>
-      </div>      
-      <nav class="main-nav">                
+      <nav class="main-nav container-fluid">
+        <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></a>                  
         <router-link to="/">Accueil</router-link>
         <a href="#movies">Films</a>
         <a href="#originals">Séries</a>
@@ -24,9 +22,14 @@ export default {
 a {
     text-decoration: none;
     color: white;
+    margin : 15px;
+    padding: 25px;
+    font-weight: bolder;
 }
 
 nav {
     background-color:black;
+    width: 100%;
+    padding: 15px;
 }
 </style>
