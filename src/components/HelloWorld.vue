@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Je m'appele Fabien j'ai 27 ans</h2>
+    <h2>Je m'appele walid j'ai 22 ans</h2>
   </div>
 </template>
 
