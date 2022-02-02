@@ -5,23 +5,46 @@
     <h2>Je m'appele walid j'ai 22 ans</h2>
     <h2>Je m'appele bilal j'ai 22 ans</h2>
     <h2>Je m'appele basile j'ai 20 ans</h2>
-    <button v-on:click="getPopularMovies">test</button>
+    <button v-on:click="getAllMovies">test</button>
+    <p v-for="item in allMovies" :key="item">
+    {{item}}
+    
+    </p>
   </div>
 </template>
 
 <script>
-import {getPopularMovies} from '../api/apiService.js'
+import {getSingleMovie, getTwentyPopularMovies} from '../api/apiService.js'
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
+   data: function() {
+     return {
+       allMovies: []
+     }
     
   },
+  props: {
+    msg: String,    
+  },
+ 
   methods: {
-    getPopularMovies(){
-      getPopularMovies().then(response => {
+    getOneMovie(id){
+      getSingleMovie(id).then(response => {
         console.log(response)
       })
+    },
+    getAllMovies(){
+      
+      for(let i=1; i<10; i++){
+        getTwentyPopularMovies(i).then((response) => {
+          
+          this.allMovies =this.allMovies.concat(response.results) 
+          console.log(this.allMovies)
+        })
+        
+      }
+     
+      
     }
   }
 }
