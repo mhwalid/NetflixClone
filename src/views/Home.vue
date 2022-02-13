@@ -1,8 +1,9 @@
 <template>
   <div class="home">
     <Navbar/>
+    <router-link to="/description/10" >walidddddddd</router-link>
   </div>
-
+    <HelloWorld/>
   <section class="main-container" >
       <div class="location" id="home">
           <h1 id="home">Popular on Netflix</h1>
@@ -79,12 +80,15 @@
 <script>
 
 import Footer from '@/components/Footer';
+import HelloWorld from '@/components/HelloWorld';
+
 import Navbar from '@/components/Navbar.vue'
 export default {
   name: 'Home',
   components: {
     Navbar,
     Footer,
+    HelloWorld,
   }
 }
 </script>
