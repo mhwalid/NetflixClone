@@ -4,10 +4,6 @@
       <h2>{{titel}}</h2>
     <p>{{description}}</p>
     
-    <button @click="getSingleMovie(5)">one Movie</button>
-    <button @click="toggle">one </button>
-    <!-- <h1>{{id}} the description  the image {{ImgPath}} the titel </h1> -->
-    
   </div>
 </template>
 
@@ -25,49 +21,12 @@ export default {
     
   },
 
-   methods: {
-
-      // setData() {
-          // var resulta= this.getSingleMovie(this.id);
-
-           
-          //  console.log(resulta);
-            // this.description=Sdescription;
-            // this.ImgPath=Simag;
-            // this.titel=Stitle;
-    // },
-      // getSingleMovie  (id):functi  {
-      //   let response = await fetch('https://api.themoviedb.org/3/movie/'+id+'?api_key=e023efc4d49d5c1c3a00c0b9db3c2ece&language=en-US', {
-      //       method : 'GET',
-      //       headers : {
-      //           'Accept': 'application/json',
-      //           'content-type': 'application/json'
-      //       }
-      //   }).then(response => { 
-      //     console.log(response);
-      //     this.ImgPath = response.data; 
-      //     this.ImgPath = "csq"; })
-        
-      //     // console.log(response+"zzzzzzz");
-      //   let popularMovies = await response.json();
-      //   console.log(popularMovies+"aaaaaaaa");
-      //   return popularMovies;
-      //   // if(popularMovies.adult==false){
-      //   //     console.log('done');
-            
-      //   //     // this.setData(popularMovies.overview,popularMovies.poster_path,popularMovies.original_title)
-      //   // }else{
-      //   //   console.log("failed");
-      //   // }
-      //   // return popularMovies;
-        
-      // }
-   },
+  
      mounted () {
     axios
       .get('https://api.themoviedb.org/3/movie/'+this.id+'?api_key=e023efc4d49d5c1c3a00c0b9db3c2ece&language=en-US')
       .then(response => (
-          console.log(response),
+          // console.log(response),
         this.description = response.data.overview,
         this.ImgPath = response.data.poster_path,
         this.titel = response.data.original_title
