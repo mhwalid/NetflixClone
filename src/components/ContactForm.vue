@@ -26,7 +26,8 @@
 
             <p>
                 <label for="Message">Message</label>
-                <input id="Message" v-model="message" type="text" name="Message">
+                <textarea id="Message" v-model="message" type="text" name="Message">
+                </textarea>
             </p>
             <p>
                 <input type="submit" value="Submit">
