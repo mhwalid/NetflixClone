@@ -1,3 +1,5 @@
+
+
 <template>
   <div class="contact">
     <form
@@ -39,6 +41,10 @@
   </div>
 </template>
 <script>
+import { Notyf } from 'notyf';
+import 'notyf/notyf.min.css'; 
+
+
 export default {
   name: 'ContactForm',
      data: function() {
@@ -69,6 +75,11 @@ export default {
                     
                 }
                 console.log(newObj)
+                const notyf = new Notyf();
+                notyf.success('Merci '+ newObj.name + ' ' +newObj.firstName + ' pour votre message !');
+                this.name ="";
+                this.firstName =""
+                this.message=""
             }
 
             e.preventDefault();
