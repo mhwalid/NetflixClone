@@ -5,7 +5,8 @@
         <router-link to="/">Accueil</router-link>
         <a href="#movies">Films</a>
         <a href="#originals">Séries</a>
-        <a href="#">Récemment ajouté</a>        
+        <a href="#">Récemment ajouté</a> 
+        <router-link to="/about">About</router-link>       
       </nav>   
     </header>
 </template>
