@@ -1,8 +1,9 @@
 <template>
-  <div class="hello">
+  <div class="desc">
+    <h2 id="title">{{title}}</h2>
     <img :src="'https://image.tmdb.org/t/p/original/'+ImgPath" alt="profile" style="    height: 315px; width: 400px;">
-      <h2>{{titel}}</h2>
-    <p>{{description}}</p>
+    <h3>Synopsis</h3>
+    <p id="desc">{{description}}</p>
     
   </div>
 </template>
@@ -16,7 +17,7 @@ export default {
         id:this.$route.params.movieId,
         description:"",
         ImgPath:"",
-        titel:"",
+        title:"",
      }
     
   },
@@ -29,7 +30,7 @@ export default {
           // console.log(response),
         this.description = response.data.overview,
         this.ImgPath = response.data.poster_path,
-        this.titel = response.data.original_title
+        this.title = response.data.original_title
         ))
   }
 }
@@ -37,8 +38,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 h3 {
   margin: 40px 0 0;
+  color:white;
 }
 ul {
   list-style-type: none;
@@ -54,5 +57,23 @@ a {
   h1,h2,p{
     color: white;
   }
+
+.desc {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc #desc {  
+  width: 50%;
+  text-align: justify;
+}
+
+#title {
+  margin-top : 40px;
+  margin-bottom: 40px;
+}
+
+
 
 </style>
