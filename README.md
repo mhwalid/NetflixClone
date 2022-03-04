@@ -2,7 +2,7 @@
 - [Présentation](#présentation)
 - [API](#api)
 - [Affichage des données](#affichage-des-données)
-- [Description d'une série](#description-d-une-série)
+- [Description d'une série](#Page-de-description)
 - [Page de contact](#page-de-contact)
 - [Récupération du projet](#récupération-du-projet)
   - [Installer VueCli](#installer-vuecli)
@@ -48,7 +48,7 @@ Pour récupérer les données des films et séries, on utilise l'API "**themovie
 
 ​	Enfin on appelle la fonction **`getAllMovies()`** dans la méthode `mounted` qui s'exécute dès la création du composant.
 
-## Description d'une série 
+## Page de description 
 
 ​	Lors du click sur l'un des film ou série le composant « Description.vue » est appelé. Il récupère les détails d'un film ou série grâce à la méthode **`getSingleMovie()`** d'apiService lors du mounte du composant.
 
