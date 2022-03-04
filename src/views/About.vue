@@ -1,7 +1,5 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  
   <Navbar />
   <ContactForm />
   <Footer />
@@ -20,3 +18,39 @@ export default {
   }
 }
 </script>
+
+
+<style>
+
+h1 {
+  color:white;
+}
+label {
+  color:white;
+  margin : 10px;
+}
+
+.contact {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact p {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#btnSubmit {
+  padding: 6px 10px;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  color:white;
+}
+
+
+
+
+</style>
