@@ -1,13 +1,10 @@
 <template>
   <div class="home">
     <Navbar/>
-    <router-link to="/description/10" >walidddddddd</router-link>
   </div>
     <ListSerie/>
   <Footer/>
 </template>
-
-
 <script>
 
 import Footer from '@/components/Footer';

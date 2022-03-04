@@ -8,7 +8,7 @@
         >
 
             <p v-if="errors.length">
-                <b style="color: red">Please correct the following error(s):</b>
+                <b style="color: red">Merci de corriger les erreurs suivantes:</b>
                 <ul>
                     <li style="color: red" v-for="error in errors" v-bind:key="error">{{ error }}</li>
                 </ul>
@@ -69,10 +69,10 @@ export default {
             this.errors = [];
 
             if (!this.name) {
-                this.errors.push("Name required.");
+                this.errors.push("Nom requis.");
             }
             if (!this.firstName) {
-                this.errors.push('firstName required.');
+                this.errors.push('Prénom requis.');
             }
 
             if (!this.errors.length) {
@@ -83,7 +83,6 @@ export default {
                     mail : this.mail
                     
                 }
-                console.log(newObj)
                 const notyf = new Notyf();
                 notyf.success('Merci '+ newObj.name + ' ' +newObj.firstName + ' pour votre message !');
                 this.name ="";

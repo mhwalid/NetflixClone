@@ -1,12 +1,12 @@
 <template>
     <header>
       <nav class="main-nav container-fluid">
-        <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></a>                  
+        <a id="logo" href="/"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></a>
         <router-link to="/">Accueil</router-link>
         <a href="#movies">Films</a>
         <a href="#originals">Séries</a>
-        <a href="#">Récemment ajouté</a> 
-        <router-link to="/about">About</router-link>       
+        <a href="#">Récemment ajouté</a>
+        <router-link to="/about">Contact</router-link>
       </nav>   
     </header>
 </template>

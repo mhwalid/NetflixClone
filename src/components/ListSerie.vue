@@ -5,6 +5,7 @@
         <h1>{{ genre.name }}</h1>
         <div class="box">
           <div v-for="film in this.orderMovies[genre.name]" :key="film.id">
+            <router-link :to="'/description/'+film.id"  ><img v-bind:src="'https://image.tmdb.org/t/p/w300/' + film.poster_path" alt=""></router-link>
             <a href=""><img v-bind:src="'https://image.tmdb.org/t/p/w300/' + film.poster_path" alt=""></a>
             <p>{{ film.original_title }}</p>
           </div>
@@ -101,8 +102,7 @@ img {
 }
 
 h1 {
-  font-size: 60px;
-  padding-top: 60px;
+  font-size: 40px;
 }
 
 /* MAIN CONTIANER */
