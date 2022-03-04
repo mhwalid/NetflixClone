@@ -1,19 +1,16 @@
 # Netflix clone project 
-
--[Présentation](#présentation)
--[API](#api)
--[Affichage des données](#affichage-des-données)
--[Description d'une série](#4description-d'une-série)
--[Page de contact](#5page-de-contact)
--[Récupération du projet](#récupération-du-projet)
-    - [Installer VueCli](#installer-vuecli)
-    - [Installation des dépendances](#installation-des-dépendances)
-    - [Lancer le serveur](#lancer-le-serveur)
-    -[Compilation pour la mise en production](#compilation-pour-la-mise-en-production)
--[Annexe](#annexe)
-    - [Page accueil site](#page-accueil-site)
-
-
+- [Présentation](#présentation)
+- [API](#api)
+- [Affichage des données](#affichage-des-données)
+- [Description d'une série](#description-d'une-série)
+- [Page de contact](#5page-de-contact)
+- [Récupération du projet](#récupération-du-projet)
+  - [Installer VueCli](#installer-vuecli)
+  - [Installation des dépendances](#installation-des-dépendances))
+  - [Lancer le serveur](#lancer-le-serveur)
+  - [Compilation pour la mise en production](#compilation-pour-la-mise-en-production)
+- [Annexe](#annexe)
+  - [Page accueil site](#page-accueil-site)
 
 ## Présentation 
 
