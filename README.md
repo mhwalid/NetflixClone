@@ -12,6 +12,8 @@
 - [Annexe](#annexe)
   - [Page accueil site](#page-accueil-site)
 
+Lien vers la documentation GIT : [link text](Git.md)
+
 ## Présentation 
 
 ​	Le projet est un clone de la célèbre application de streaming Netflix. Le but du projet est de donner des informations sur les films et séries. Pour cela on utilise les technologies suivantes : 
