@@ -1,8 +1,21 @@
 # Netflix clone project 
 
-[TOC]
+-[Présentation](#1)-présentation)
+-[API](#2)-api)
+-[Affichage des données](#3)-affichage-des-données)
+-[Description d'une série](#4)-description-d'une-série)
+-[Page de contact](#5)-page-de-contact)
+-[Récupération du projet](#6)-récupération-du-projet)
+    - [Installer VueCli](#installer-vuecli)
+    - [Installation des dépendances](#installation-des-dépendances)
+    - [Lancer le serveur](#lancer-le-serveur)
+    -[Compilation pour la mise en production](#compilation-pour-la-mise-en-production)
+-[Annexe](#7)-annexe)
+    - [Page accueil site](#page-accueil-site)
 
-## 1- Présentation 
+
+
+## 1) Présentation 
 
 ​	Le projet est un clone de la célèbre application de streaming Netflix. Le but du projet est de donner des informations sur les films et séries. Pour cela on utilise les technologies suivantes : 
 
@@ -17,14 +30,14 @@
 
 Pour récupérer les données des films et séries, on utilise l'API "**themoviedb**" qui est open source. (lien vers [API](https://www.themoviedb.org/))
 
-## 2- API
+## 2) API
 
 ​	Pour récupérer les données de l'API on utilise le service `apiService.js`. Celui-ci nous permet de faire la liaison entre l'API et notre application. Ce service contient 2 constantes: 
 
 - `getTwentyPopularMovies(page)` qui récupère 20 films parmis les plus populaires, pour toutes les catégories
 - `getSingleMovie(id)` qui cible un film ou série via son id
 
-## 3- Affichage des données 
+## 3) Affichage des données 
 
 ​	L'affichage des films et séries se fait grâce au composant « `ListSerie.vue` » . 
 
@@ -38,11 +51,11 @@ Pour récupérer les données des films et séries, on utilise l'API "**themovie
 
 ​	Enfin on appelle la fonction **`getAllMovies()`** dans la méthode `mounted` qui s'exécute dès la création du composant.
 
-## 4- Description d'une série 
+## 4) Description d'une série 
 
 ​	Lors du click sur l'un des film ou série le composant « Description.vue » est appelé. Il récupère les détails d'un film ou série grâce à la méthode **`getSingleMovie()`** d'apiService lors du mounte du composant.
 
-## 5- Page de contact
+## 5) Page de contact
 
 ​	Le formulaire de contact se trouve dans le composant « `ContactForm.vue` », il permet de saisir les différentes informations dont on a besoin pour contacter le site. L'envoie du formulaire se fait grâce à la méthode `checkForm()`
 
@@ -56,7 +69,7 @@ notyf.success('Merci '+ newObj.name + ' ' +newObj.firstName + ' pour votre messa
 
 ​	Pour terminer, nous réinitialisons les champs saisie après soumission du formulaire. 
 
-## 6- Récupération du projet
+## 6) Récupération du projet
 
 ### Installer VueCli
 ```shell
@@ -80,7 +93,7 @@ npm run serve
 npm run build
 ```
 
-## 7- Annexe 
+## 7) Annexe 
 
 ### Page accueil site 
 
