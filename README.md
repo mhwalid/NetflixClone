@@ -2,7 +2,7 @@
 - [Présentation](#présentation)
 - [API](#api)
 - [Affichage des données](#affichage-des-données)
-- [Description d'une série](#Page-de-description)
+- [Page de description](#Page-de-description)
 - [Page de contact](#page-de-contact)
 - [Récupération du projet](#récupération-du-projet)
   - [Installer VueCli](#installer-vuecli)
