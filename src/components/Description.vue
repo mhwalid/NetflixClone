@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+import {getSingleMovie} from "@/api/apiService";
 export default {
    data: function() {
      return {
@@ -21,17 +21,12 @@ export default {
      }
     
   },
-
-  
      mounted () {
-    axios
-      .get('https://api.themoviedb.org/3/movie/'+this.id+'?api_key=e023efc4d49d5c1c3a00c0b9db3c2ece&language=en-US')
-      .then(response => (
-          // console.log(response),
-        this.description = response.data.overview,
-        this.ImgPath = response.data.poster_path,
-        this.title = response.data.original_title
-        ))
+       getSingleMovie(this.id).then((response) => {
+             this.description = response.data.overview
+             this.ImgPath = response.data.poster_path
+             this.titel = response.data.original_title
+       })
   }
 }
 </script>

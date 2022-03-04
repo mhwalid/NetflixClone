@@ -1,7 +1,7 @@
 <template>
   <footer>
     <p>Copy 2022 Clone Netflix, Inc.</p>
-    <p>Basile Regnault</p>
+    <p>Auteurs : REGNAULT - HALLOULI - PONCET - BOUTERBIAT</p>
   </footer>
 </template>
 
