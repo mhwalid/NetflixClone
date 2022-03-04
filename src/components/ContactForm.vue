@@ -14,25 +14,32 @@
                 </ul>
             </p>
 
+            <h1>Nous contacter </h1>
+
             <p>
                 <label for="name">Nom</label>
-                <input id="name" v-model="name" type="text" name="name">
+                <input id="name" v-model="name" placeholder="Votre nom" type="text" name="name">
             </p>
 
             <p>
                 <label for="firstName">Prénom</label>
-                <input id="firstName" v-model="firstName" type="text" name="firstName">
+                <input id="firstName" v-model="firstName" placeholder="Votre prénom" type="text" name="firstName">
+            </p>
+
+            <p>
+                <label for="mail">Mail</label>
+                <input id="mail" v-model="mail" placeholder="Votre adresse mail" type="email" name="mail">
             </p>
 
            
 
             <p>
                 <label for="Message">Message</label>
-                <textarea id="Message" v-model="message" type="text" name="Message">
+                <textarea id="Message" v-model="message" type="text" placeholder="Votre message..." name="Message">
                 </textarea>
             </p>
             <p>
-                <input type="submit" value="Submit">
+                <input id="btnSubmit" type="submit" value="Envoyer">
             </p>
 
         </form>
@@ -53,6 +60,7 @@ export default {
         name: '',
         firstName: '',
         message: '',
+        mail : '',
      }
     
   },
@@ -72,14 +80,16 @@ export default {
                     name : this.name,
                     firstName : this.firstName,
                     message : this.message,
+                    mail : this.mail
                     
                 }
                 console.log(newObj)
                 const notyf = new Notyf();
                 notyf.success('Merci '+ newObj.name + ' ' +newObj.firstName + ' pour votre message !');
                 this.name ="";
-                this.firstName =""
-                this.message=""
+                this.firstName ="";
+                this.message="";
+                this.mail="";
             }
 
             e.preventDefault();
