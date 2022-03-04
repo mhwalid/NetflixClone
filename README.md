@@ -12,7 +12,7 @@
 - [Annexe](#annexe)
   - [Page accueil site](#page-accueil-site)
 
-Lien vers la documentation GIT : [link text](Git.md)
+[Lien vers la documentation GIT](Git.md)
 
 ## Présentation 
 
