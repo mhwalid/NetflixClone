@@ -18,7 +18,7 @@
     - [Vérifier les fichiers qui on eu un changement par rapport au dernier commit](#Vérifier-les-fichiers-qui-ont-eu-un-changement-par-rapport-au-dernier-commit)
     - [Ajouter les fichiers que l'on veut envoyer a notre dépôt distant](#Ajouter-les-fichiers-que-l'on-veut-envoyer-à-notre-dépôt-distant)
     - [Commit](#Commit)
-    - [Modifier le message d'un commit](#Modifier-le-message-d-'-un-commit)
+    - [Modifier le message d'un commit](#Modifier-le-message-d\'un-commit)
   - [Sauvegarde du travail sans commit : git stash](#Sauvegarde-du-travail-sans-commit)
 - [Mise à jour de la branche develop](#Mise-à-jour-de-la-branche-develop)
   - [Merge de la branche develop](#Merge-de-la-branche-develop)
