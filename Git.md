@@ -18,8 +18,8 @@
     - [Vérifier les fichiers qui on eu un changement par rapport au dernier commit](#Vérifier-les-fichiers-qui-ont-eu-un-changement-par-rapport-au-dernier-commit)
     - [Ajouter les fichiers que l'on veut envoyer a notre dépôt distant](#Ajouter-les-fichiers-que-l'on-veut-envoyer-à-notre-dépôt-distant)
     - [Commit](#Commit)
-    - [Modifier le message d'un commit](#Modifier-le-message-d'un-commit)
-  - [Sauvegarde du travail sans commit : git stash](#Sauvegarde-du-travail-sans-commit-:-git-stash)
+    - [Modifier le message d'un commit](#Modifier-le-message-d-'-un-commit)
+  - [Sauvegarde du travail sans commit : git stash](#Sauvegarde-du-travail-sans-commit)
 - [Mise à jour de la branche develop](#Mise-à-jour-de-la-branche-develop)
   - [Merge de la branche develop](#Merge-de-la-branche-develop)
   - [Résolution de potentiels conflits](#Résolution-de-potentiels-conflits )
@@ -27,7 +27,7 @@
 - [Mise à jour de la branche main](#Mise-à-jour-de-la-branche-main)
   - [Création d'un tag de version](#Création-d'un-tag-de-version)
 
-  
+
 
 ​	Pour réaliser notre projet nous avons utilisé l'outil de versionning GIT qui est un outil de gestion de version (SCM) qui permet de garder une trace de chaque modification et qui facilite grandement le travail collaboratif. C'est décentralisé ce qui permet d'avoir toujours une version assez récente sauvegardée sur un pc en local, mais également de travailler sans avoir besoin d'être connecté à internet. 
 
@@ -323,7 +323,7 @@ Une fois toutes ces étapes réalisées on peut mettre à jour notre dépôt dis
 git push origin <nomBranche>
 ```
 
-### Sauvegarde du travail sans commit : git stash
+### Sauvegarde du travail sans commit
 
 ​	Lorsque l'on développe il peut arriver qu'une autre mission plus urgente nous soit attribuée comme la correction d'un bug sur une autre branche. Si on a des changements dans les fichiers, il n'est pas possible de changer de branche, git nous avertira avec ce message : 
 
