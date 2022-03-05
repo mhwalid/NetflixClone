@@ -90,7 +90,7 @@ Il faut alors simplement coller le contenu du fichier id_rsa.pub que l’on a co
 
 **Pour initialiser le repo local  sur notre pc il faut suivre ces étapes :** 
 
-- Entrez la commande « git init » pour initialiser un repository Git vide. Cela aura pour conséquence de créer un dossier caché .git . On peut alors lier notre dépôt local au dépôt GitHub 
+- Entrez la commande `git init` pour initialiser un repository Git vide. Cela aura pour conséquence de créer un dossier caché .git . On peut alors lier notre dépôt local au dépôt GitHub 
 
 - ```
   git remote add origin git@github.com:mhwalid/netflix-clone.git //Fais la connexion avec le repo
@@ -114,13 +114,13 @@ Elle va venir faire le git init ainsi que le git remote add avec le dépôt dist
 
 ​	Une branche git est une divergence du projet principal qui va permettre de travailler sans avoir un impact sur celui-ci.
 
-​	La branche main sera celle de production, nous mergeons dessus que lorsque tous les tests sont faits et que tout est fonctionnel. Il ne doit pas avoir de bug et elle doit être utilisée seulement par le client final.
+​	La branche `main` sera celle de production, nous mergeons dessus que lorsque tous les tests sont faits et que tout est fonctionnel. Il ne doit pas avoir de bug et elle doit être utilisée seulement par le client final.
 
-​	Nous utiliserons une branche de recette qui se nomme « `release` », il s’agit d’une branche pour la phase de test pour faire la passerelle entre les branches develop et main. La phase de test est la dernière étape avant la mise en production d'un projet. C'est durant cette étape que l'on va tester les fonctionnalités de notre projet, faire les démonstrations auprès du client avant sa mise en service. Régulièrement, après un ajout important de fonctionnalités sur notre branche develop, nous les testons sur la branche release. Ce cycle peut se répéter 'x' fois avant la mise en service du projet.
+​	Nous utiliserons une branche de recette qui se nomme « `release` », il s’agit d’une branche pour la phase de test pour faire la passerelle entre les branches `develop` et `main`. La phase de test est la dernière étape avant la mise en production d'un projet. C'est durant cette étape que l'on va tester les fonctionnalités de notre projet, faire les démonstrations auprès du client avant sa mise en service. Régulièrement, après un ajout important de fonctionnalités sur notre branche develop, nous les testons sur la branche release. Ce cycle peut se répéter 'x' fois avant la mise en service du projet.
 
-​	Nous aurons ensuite une branche develop qui servira de point central au développement de nos nouvelles fonctionnalités.
+​	Nous aurons ensuite une branche `develop` qui servira de point central au développement de nos nouvelles fonctionnalités.
 
-​	Nous assignons aux autres branches une fonctionnalité, elle seront toutes créée à partir de la branche develop. Les développeurs coderont exclusivement sur ces branches. Lorsqu'une fonctionnalité sera finie, le ou les développeur(s) viendront merge la branche créée sur develop.
+​	Nous assignons aux autres branches une fonctionnalité, elle seront toutes créée à partir de la branche `develop`. Les développeurs coderont exclusivement sur ces branches. Lorsqu'une fonctionnalité sera finie, le ou les développeur(s) viendront merge la branche créée sur develop.
 
 ### Utilisation du tableau de projet git
 
@@ -130,12 +130,12 @@ Le but de cet outil est d’établir un planning des tâches à réaliser et de 
 
 **Pour le projet  GIT, nous avons créé 4 sections états des taches :** 
 
-- « To do », il s’agit du backlog, des tâches à faire qui ne sont pas encore assignées.
-- « In progress », une section des tâches en cours, les tâches sont assignées et une issue créée.
-- « Test », toutes les tâches doivent être/sont testées.
-- « Done », les tâches sont finies, les issues sont fermées.
+- « `To do` », il s’agit du backlog, des tâches à faire qui ne sont pas encore assignées.
+- « `In progress` », une section des tâches en cours, les tâches sont assignées et une issue créée.
+- « `Test` », toutes les tâches doivent être/sont testées.
+- « `Done` », les tâches sont finies, les issues sont fermées.
 
-​	De plus, nous pouvons utiliser l’outil « issues » de GitHub, permettant le suivi des tâches du projet, de les assigner individuellement à un ou plusieurs membre(s) du projet et de définir un label pour chaque issue pour identifier plus rapidement le type de fonctionnalité développées : 
+​	De plus, nous pouvons utiliser l’outil « `issues` » de GitHub, permettant le suivi des tâches du projet, de les assigner individuellement à un ou plusieurs membre(s) du projet et de définir un label pour chaque issue pour identifier plus rapidement le type de fonctionnalité développées : 
 
 ![Issues label](docs/images/issues-labels.png)
 
@@ -213,7 +213,7 @@ git push origin --delete <NomDeLaBranche>
 
 ## Création et développement d'une feature 
 
-​	Nous allons voir comment crée une fonctionnalités en respectant ce que nous avons définis dans notre WorkFlow.
+​	Nous allons voir comment crée une fonctionnalités en respectant ce que nous avons définis dans notre `WorkFlow`.
 
 ### Création de la branche depuis develop
 
@@ -227,8 +227,8 @@ git pull origin develop
 
 Cette commande nous permet de mettre à jour notre branche en local en fonction de la branche qui est sur le repo distant. Elle exécute dans l'ordre les 2 commandes : 
 
-- git fetch qui va venir récupérer le contenu du dépôt distant 
-- git merge qui prendra deux pointeurs de commit, le dernier de la branche sur laquelle nous sommes positionnés et le dernier commit commun aux deux branches en question
+- `git fetch` qui va venir récupérer le contenu du dépôt distant 
+- `git merge` qui prendra deux pointeurs de commit, le dernier de la branche sur laquelle nous sommes positionnés et le dernier commit commun aux deux branches en question
 
 A noter que le terme `origin` est un alias qui cible le repository distant. 
 
